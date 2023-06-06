@@ -30,6 +30,9 @@ body{
   font-family: Epilogue,-apple-system,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,system-ui,Apple Color Emoji,Segoe UI Emoji;
 	color: var(--font-color);
 }
+html{
+	scroll-behavior: smooth;
+}
 section{
 	padding-block: 10vw;
 }
