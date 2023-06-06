@@ -32,8 +32,9 @@ landingItems.forEach((item, index) => {
 		landingA.style.opacity = "1"
 	}, index * 100);
 });
-
-
+setTimeout(() => {
+	landingA.style.opacity = "1"
+}, index * 100);
 
 
 
