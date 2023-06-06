@@ -23,19 +23,17 @@ function closeList(){
 
 
 //landing animation 
-window.onload = () => {
-	const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
-	const landingA = document.querySelector("#landing .continer .content a")
+const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
+const landingA = document.querySelector("#landing .continer .content a")
 
-	landingItems.forEach((item, index) => {
-		setTimeout(() => {
-			item.style.cssText = "top: 0; opacity: 1;";
-		}, index * 100);
-	});
+landingItems.forEach((item, index) => {
+	setTimeout(() => {
+		item.style.cssText = "top: 0; opacity: 1;";
+	}, index * 100);
+});
 
-	landingA.style.opacity = "1"
+landingA.style.opacity = "1"
 
-}
 
 
 

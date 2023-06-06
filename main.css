@@ -174,7 +174,7 @@ header .continer .list ul li:first-of-type .line{
 
 
 /* landing */
-#landing{
+section#landing{
 	min-height: 100vh;
 }
 #landing .continer{
