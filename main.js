@@ -23,7 +23,21 @@ function closeList(){
 
 
 //landing animation 
+//line in header link
+const li = document.querySelectorAll("header .continer .list ul li")
+
+function liLine(section){
+	li.forEach( l => {
+		l.classList.remove("active")
+	})
+	li.forEach( l => {
+		li[section].classList.add("active")
+	})
+}
+
+
 window.onload = ()=>{
+	liLine(0);
 	const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
 	const landingA = document.querySelector("#landing .continer .content a")
 
@@ -38,9 +52,6 @@ window.onload = ()=>{
 	}, index * 100);
 }
 
-
-
-
 //scroll animation
 window.onscroll = () => {
 	const cards = document.querySelectorAll("#project .continer .cards .card .img");
@@ -54,7 +65,7 @@ window.onscroll = () => {
 
 
   if (topW <= vh) {
-
+		liLine(1);
 		projectP.style.cssText = "top: 0; opacity: 1;"; 
 
     cards.forEach((card, index) => {
@@ -78,6 +89,8 @@ window.onscroll = () => {
 	const topA = about.getBoundingClientRect().top;
 
 		if (topA <= vh) {
+			liLine(2);
+
 			p.forEach((p, index) => {
 			setTimeout(() => {
 				p.style.cssText = "top: 0; opacity: 1;";
@@ -94,6 +107,8 @@ window.onscroll = () => {
 	const topC = contact.getBoundingClientRect().top;
 
 		if (topC <= vh) {
+			liLine(3);
+
 			contactItems.forEach((item, index) => {
 				setTimeout(() => {
 					item.style.cssText = "top: 0; opacity: 1;";
