@@ -29,10 +29,11 @@ const landingA = document.querySelector("#landing .continer .content a")
 landingItems.forEach((item, index) => {
 	setTimeout(() => {
 		item.style.cssText = "top: 0; opacity: 1;";
+		landingA.style.opacity = "1"
 	}, index * 100);
 });
 
-landingA.style.opacity = "1"
+
 
 
 
