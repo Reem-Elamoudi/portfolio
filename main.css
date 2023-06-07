@@ -81,7 +81,7 @@ section {
 .loading .cont .text .load {
 	width: 3em;
 	height: 3em;
-	margin: 0 auto 1.5em auto;
+	margin: 0 auto 1em auto;
 	border-radius: 50%;
 	border: 3px solid rgba(0, 0, 0, 0.2);
 	border-top-color: #000000;
