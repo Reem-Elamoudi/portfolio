@@ -29,6 +29,7 @@ body{
 	background-color: var(--background-color);
   font-family: Epilogue,-apple-system,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,system-ui,Apple Color Emoji,Segoe UI Emoji;
 	color: var(--font-color);
+	cursor: none;
 }
 html{
 	scroll-behavior: smooth;
@@ -69,7 +70,7 @@ header::after{
 	position: absolute;
 	top: -3em;
 	left: 0;
-	z-index: -1;
+	z-index: -2;
 	background-image: linear-gradient(to bottom, var(--background-color) 30%, transparent 100%);
 
 }
@@ -103,20 +104,39 @@ header .continer .list ul{
 @media (max-width: 773px){
 	header .continer .list ul{
 		width: 70%;
-		height: 100vh;
+		height: 120vh;
 		background: var(--menu-background);
 		flex-direction: column;
 		padding-inline-start: 2em;
 		font-size: 1.5rem;
 		padding-top: 3em;
 		position: absolute;
-		top: -1em;
+		top: -2em;
 		left: 100%;
 		gap: 1em;
+	}
+	header .continer .list ul::after{
+		content: "";
+		width: 100vh;
+		height: 120vh;
+		position: absolute;
+		left: -100%;
+		top: 0;
+		z-index: -1;
+		backdrop-filter: blur(10px);
+		opacity: 0;
+		transition: opacity .4s;
+		-webkit-transition: opacity .4s;
+		-moz-transition: opacity .4s;
+		-ms-transition: opacity .4s;
+		-o-transition: opacity .4s;
 	}
 	header .continer .list ul.open{
 		left: calc(50% - 50px);
 	}
+}
+header .continer .list ul.open::after{
+	opacity: 1;
 }
 @media (max-width: 480px){
 	header .continer .list ul.open{
@@ -149,7 +169,8 @@ header .continer .cont .close{
 	z-index: 2;
 }
 .logo{
-	width: 50px;
+	width: 40px;
+	z-index: -1;
 }
 header .continer .list ul li{
 	width: fit-content;
@@ -404,19 +425,16 @@ section#landing{
 	flex: 1;
 }
 #about .continer .cont .img{
-	width: 100%;
-	max-width: 0;
-	height: 395px;
 	opacity: 0;
-	background: url(/img/user.jpg) no-repeat center;
-	background-size: cover;
-	filter: grayscale(100);
-	-webkit-filter: grayscale(100);
 	transition: max-width .8s, opacity .8s;
 	-webkit-transition: max-width .8s, opacity .8s;
 	-moz-transition: max-width .8s, opacity .8s;
 	-ms-transition: max-width .8s, opacity .8s;
 	-o-transition: max-width .8s, opacity .8s;
+}
+#about .continer .cont .img img{
+	max-width: 130%;
+	
 }
 @media (max-width: 992px){
 	#about .continer .cont .img{
@@ -553,4 +571,64 @@ section#landing{
 	-moz-transition:top.8s, opacityp .8s;
 	-ms-transition:top.8s, opacityp .8s;
 	-o-transition:top.8s, opacityp .8s;
+}
+
+
+/* footer */
+footer{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+footer::after{
+	content: "";
+	width: 1px;
+	height: 70px;
+	position: absolute;
+	background-color: var(--font-color);
+	rotate: 90deg;
+	left: 23px;
+}
+footer img{
+	max-width: 230px;
+	writing-mode: horizontal-tb;
+	-webkit-writing-mode: horizontal-tb;
+	-ms-writing-mode: horizontal-tb;
+}
+footer .social{
+	display: flex;
+	gap: 1em;
+	position: relative;
+	left: -50px;
+}
+footer .social img{
+	max-width: 30px;
+	opacity: .6;
+	transition: opacity .4s;
+	-webkit-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+	-o-transition: opacity .4s;
+}
+footer .social img:hover{
+	opacity: 1;
+}
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;  
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #fff;
 }

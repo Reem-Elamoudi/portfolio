@@ -3,15 +3,21 @@
 let menu = document.querySelector(".menu");
 let closeI = document.querySelector(".close");
 let ul = document.querySelector("header .continer .list ul");
+const liA = document.querySelectorAll("header .continer .list ul li a");
+const body = document.body
 
 menu.onclick = openList;
 closeI.onclick = closeList;
+liA.forEach(link => {
+	link.onclick = closeList;
+})
 
 function openList(){
 	menu.style.display = "none";
 	closeI.style.display = "block";
 
 	ul.classList.add("open")
+	body.style.cssText = "height: 100vh; overflow: hidden;"
 }
 
 function closeList(){
@@ -19,6 +25,7 @@ function closeList(){
 	menu.style.display = "block";
 
 	ul.classList.remove("open")
+	body.style.cssText = "height: auto; overflow: auto;"
 }
 
 
@@ -36,21 +43,22 @@ function liLine(section){
 }
 
 
-window.onload = ()=>{
-	liLine(0);
-	const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
-	const landingA = document.querySelector("#landing .continer .content a")
+window.onload = () => {
+  liLine(0);
+  const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
+  const landingA = document.querySelector("#landing .continer .content a");
 
-	landingItems.forEach((item, index) => {
-		setTimeout(() => {
-			item.style.cssText = "top: 0; opacity: 1;";
-			landingA.style.opacity = "1"
-		}, index * 100);
-	});
-	setTimeout(() => {
-		landingA.style.opacity = "1"
-	}, index * 100);
-}
+  landingItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.style.cssText = "top: 0; opacity: 1;";
+      landingA.style.opacity = "1";
+    }, index * 100);
+  });
+  setTimeout(() => {
+    landingA.style.opacity = "1";
+  }, landingItems.length * 100);
+};
+
 
 //scroll animation
 window.onscroll = () => {
@@ -63,6 +71,10 @@ window.onscroll = () => {
   const topW = work.getBoundingClientRect().top;
 	const vh = window.innerHeight;
 
+
+  if (topW > vh) {
+		liLine(0);
+	}
 
   if (topW <= vh) {
 		liLine(1);
@@ -126,7 +138,7 @@ window.onscroll = () => {
 
 // send email from form
 function sendEmail(){
-  const nameE = document.querySelector('#name');
+  let nameE = document.querySelector('#name');
   const email = document.querySelector('#email');
   const ms = document.querySelector('#ms');
   const valid = document.querySelectorAll('.valid-ms');
@@ -147,7 +159,7 @@ function sendEmail(){
 }
 
 // Add event listener for Enter key press
-[nameE, email, ms].forEach(input => {
+document.querySelectorAll("input").forEach(input => {
   input.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
       sendEmail();
@@ -156,3 +168,51 @@ function sendEmail(){
     }
   });
 });
+
+
+
+//mouse move
+const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".circle");
+
+const cursor = document.querySelector(".cursor");
+
+circles.forEach(function (circle, index) {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = "white";
+});
+
+window.addEventListener("mousemove", function (e) {
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+});
+
+function animateCircles() {
+  let x = coords.x;
+  let y = coords.y;
+
+  cursor.style.top = x;
+  cursor.style.left = y;
+  
+  circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+
+    circle.style.scale = (circles.length - index) / circles.length;
+
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+
+  requestAnimationFrame(animateCircles);
+}
+
+animateCircles();
+
+
+
