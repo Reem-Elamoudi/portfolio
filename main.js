@@ -44,19 +44,31 @@ function liLine(section){
 
 
 window.onload = () => {
-  liLine(0);
-  const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
-  const landingA = document.querySelector("#landing .continer .content a");
+	setTimeout(()=> {
+		let sidel = document.querySelector(".loading .cont .side.l");
+		let sider = document.querySelector(".loading .cont .side.r");
+		let textCont = document.querySelector(".loading .cont");
 
-  landingItems.forEach((item, index) => {
-    setTimeout(() => {
-      item.style.cssText = "top: 0; opacity: 1;";
-      landingA.style.opacity = "1";
-    }, index * 100);
-  });
-  setTimeout(() => {
-    landingA.style.opacity = "1";
-  }, landingItems.length * 100);
+		sidel.style.left = "-100vw"
+		sider.style.right = "-100vw"
+		textCont.style.opacity = "0"
+	}, 2000) 
+
+	setTimeout(()=> {
+		liLine(0);
+		const landingItems = document.querySelectorAll("#landing .continer *:not(#landing .continer .content a)");
+		const landingA = document.querySelector("#landing .continer .content a");
+
+		landingItems.forEach((item, index) => {
+			setTimeout(() => {
+				item.style.cssText = "top: 0; opacity: 1;";
+				landingA.style.opacity = "1";
+			}, index * 100);
+		});
+		setTimeout(() => {
+			landingA.style.opacity = "1";
+		}, landingItems.length * 100);
+	}, 2000) 
 };
 
 
