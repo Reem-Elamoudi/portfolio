@@ -52,6 +52,10 @@ window.onload = () => {
 		sidel.style.left = "-100vw"
 		sider.style.right = "-100vw"
 		textCont.style.opacity = "0"
+
+		setTimeout(()=> {
+			document.querySelector(".loading").style.display = "none"
+		}, 100)
 	}, 2000) 
 
 	setTimeout(()=> {
