@@ -59,7 +59,7 @@ window.onload = () => {
 		setTimeout(() => {
 			landingA.style.opacity = "1";
 		}, landingItems.length * 100);
-	}, 2000) 
+	}, 100) 
 };
 
 
