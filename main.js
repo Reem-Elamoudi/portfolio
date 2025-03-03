@@ -44,19 +44,6 @@ function liLine(section){
 
 
 window.onload = () => {
-	setTimeout(()=> {
-		let sidel = document.querySelector(".loading .cont .side.l");
-		let sider = document.querySelector(".loading .cont .side.r");
-		let textCont = document.querySelector(".loading .cont");
-
-		sidel.style.left = "-100vw"
-		sider.style.right = "-100vw"
-		textCont.style.opacity = "0"
-
-		setTimeout(()=> {
-			document.querySelector(".loading").style.display = "none"
-		}, 100)
-	}, 2000) 
 
 	setTimeout(()=> {
 		liLine(0);
