@@ -1,148 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/img/dark-logo.jpg" type="image/x-icon">
-	<link rel="stylesheet" href="./main.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&amp;display=swap">
-	<script src="https://kit.fontawesome.com/85915fb54c.js" crossorigin="anonymous"></script>
-	<title>portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/dark-logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/85915fb54c.js" crossorigin="anonymous"></script>
+  <title>Reem's Portfolio</title>
 </head>
 <body>
 
-	<!-- header -->
-	<header>
-		<div class="continer">
-			<img src="/img/logo.png" class="logo" alt="logo">
-			<div class="cont">
-				<div class="list">
-					<ul>
-						<li><a href="#landing">Introduction</a></li>
-						<li><a href="#project">Projects</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<svg  class="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8"><path stroke-linecap="square" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path></svg>
-				<svg class="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8"><path stroke-linecap="square" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path></svg>
-			</div>
-		</div>
-	</header>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="/img/logo.png" class="logo" alt="Reem's Logo">
+      <nav>
+        <ul>
+          <li><a href="#landing">Introduction</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu-icon">
+          <path stroke-linecap="square" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </div>
+    </div>
+  </header>
 
-<section id="landing">
-	<div class="continer">
-		<div class="content">
-			<h1>Hi, I’m Reem </br>
-I am a passionate web developer with a strong dedication to learning and growth. </h1>
-			<p>I specialize in creating modern, responsive websites with clean and efficient code.</p>
-			<a href="#project">
-				Explore my projects
-			<img src="/img/arrow-up.png" alt="go down" id="arr-down">
-			</a>
-		</div>
-		<div class="img">
-			<img src="/img/076e596964f26800ec08dfc2084803ac.png" alt="REEM">
-		</div>
-	</div>
-</section>
+  <!-- Landing Section -->
+  <section id="landing" class="section">
+    <div class="container">
+      <div class="landing-content">
+        <h1>Hi, I’m Reem</h1>
+        <p>I am a passionate web developer focused on creating clean and responsive websites.</p>
+        <a href="#projects" class="btn">Explore my projects <img src="/img/arrow-down.png" alt="arrow"></a>
+      </div>
+      <div class="landing-image">
+        <img src="/img/076e596964f26800ec08dfc2084803ac.png" alt="Reem">
+      </div>
+    </div>
+  </section>
 
-<section id="project">
-	<div class="continer">
-		<p id="sectionTitle">PROJECTS</p>
-		<p>Explore my projects and see how I blend frontend development with creativity. I hope they inspire you!</p>
-		<div class="cards">
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Explore my projects and see how I blend frontend development with creativity.</p>
+      <div class="projects">
+        <div class="project-card">
+          <img src="/img/net.png" alt="Project 1">
+          <a href="https://inspiring-khapse-4e4ee7.netlify.app/" target="_blank" class="btn">Visit Project</a>
+          <span class="project-title">Training 01</span>
+        </div>
+        <div class="project-card">
+          <img src="/img/net.png" alt="Project 2">
+          <a href="https://elzero-template2-qpat.vercel.app/" target="_blank" class="btn">Visit Project</a>
+          <span class="project-title">Training 02</span>
+        </div>
+        <div class="project-card">
+          <img src="/img/net.png" alt="Project 3">
+          <a href="https://codepen.io/Reem-Elamody/pen/VwGGYpb" target="_blank" class="btn">Visit Project</a>
+          <span class="project-title">Training 03</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<div class="card one">
-				<div class="img">
-					<div class="hover">
-						<a href="https://inspiring-khapse-4e4ee7.netlify.app/" target="_blank"><img src="/img/net.png" alt="visit">VISIT</a>
-					</div>
-				</div>
-				<span class="p">Developed by me</span>
-				<span class="title">training 01.</span>
-			</div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I enjoy solving problems, improving my skills, and building projects that provide great user experiences.</p>
+      <div class="skills">
+        <span>Technologies I work with:</span>
+        <div>
+          <i class="fa-regular fa-file-code"></i>
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-square-github"></i>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="/img/user.png" alt="About Image">
+      </div>
+    </div>
+  </section>
 
-			<div class="card two">
-				<div class="img">
-					<div class="hover">
-						<a href="https://elzero-template2-qpat.vercel.app/" target="_blank"><img src="/img/net.png" alt="visit">VISIT</a>
-					</div>
-				</div>
-				<span class="p">Developed by me</span>
-				<span class="title">training 02.</span>
-			</div>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let’s connect and create something amazing together!</p>
+      <a href="mailto:rela69318am@gmail.com" class="btn">Email Me</a>
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="form-group">
+          <label for="name">Your Name*</label>
+          <input type="text" name="name" id="name" placeholder="Reem Elamoudi" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email*</label>
+          <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message*</label>
+          <textarea name="message" id="message" placeholder="Hi Reem, let's collaborate!" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-			<div class="card three">
-				<div class="img">
-					<div class="hover">
-						<a href="https://codepen.io/Reem-Elamody/pen/VwGGYpb" target="_blank"><img src="/img/net.png" alt="visit">VISIT</a>
-					</div>
-				</div>
-				<span class="p">Developed by me</span>
-				<span class="title">training 03.</span>
-			</div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="/img/signature-l.png" alt="Reem's Signature">
+      </div>
+      <div class="social-links">
+        <a href="mailto:rela69318am@gmail.com" target="_blank"><img src="/img/email.png" alt="Email"></a>
+        <a href="https://github.com/Reem-Elamoudi" target="_blank"><img src="/img/githup.png" alt="GitHub"></a>
+        <a href="https://codepen.io/Reem-Elamody" target="_blank"><img src="/img/codepen.png" alt="CodePen"></a>
+      </div>
+    </div>
+  </footer>
 
-		</div>
-	</div>
-</section>
-
-<!-- about -->
-<section id="about">
-	<div class="continer">
-		<p id="sectionTitle">ABOUT Me</p>
-		<p>I enjoy solving problems, improving my skills, and building projects that provide great user experiences. My journey in web development is driven by curiosity and a desire to make an impact through technology.</p>
-		<div class="info">
-			<span>WORK WITH</span>
-			<div>
-				<i class="fa-regular fa-file-code"></i>
-				<i class="fa-brands fa-css3"></i>
-				<i class="fa-brands fa-js"></i>
-				<i class="fa-brands fa-square-github"></i>
-			</div>
-		</div>
-		<div class="img">
-			<img src="/img/user.png" alt="">
-		</div>
-	</div>
-</section>
-
-<section id="contact">
-	<div class="continer">
-		<p id="sectionTitle">CONTACT</p>
-		<div class="cont">
-			<p>Let’s connect and create something amazing together!</p>
-			<a href="mailto:rela69318am@gmail.com">rela69318am@gmail.com</a>
-			<form onsubmit="sendEmail(); reset(); return false;">
-				<div class="row">
-					<label for="#name">Write your name*</label>
-					<input type="text" name="name" id="name" placeholder="Reem Elamoudi" required>
-				</div>
-				<div class="row">
-					<label for="#email">What's your email?*</label>
-					<input type="text" name="email" id="email" placeholder="Your email" required>
-				</div>
-				<div class="row">
-					<label for="#ms">What's your message?</label>
-					<textarea name="ms" id="ms" placeholder="Hi Reem, let's work!" rows="2" required></textarea>
-				</div>
-				<button type="submit">SEND <img src="/img/arrow-up.png" alt="send message"></button>
-			</form>
-		</div>
-	</div>
-</section>
-
-<footer>
-	<img src="./img/signature-l.png" alt="Reem-Elamody">
-	<div class="social">
-		<a href="mailto:rela69318am@gmail.com" target="_blank"><img src="/img/email.png" alt="send me a message"></a>
-		<a href="https://github.com/Reem-Elamoudi" target="_blank"><img src="/img/githup.png" alt="GitHub"></a>
-		<a href="https://codepen.io/Reem-Elamody" target="_blank"><img src="/img/codepen.png" alt="CodePen"></a>
-	</div>
-</footer>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="./main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
