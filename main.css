@@ -10,8 +10,15 @@ body {
   background-color: #121212;
   color: #fff;
 }
+
 header svg{
  width: 25px;
+}
+
+header .container {
+display: flex;
+align-items : center;
+justify-content: space-bettwen;
 }
 
 
