@@ -10,6 +10,10 @@ body {
   background-color: #121212;
   color: #fff;
 }
+header svg{
+ width: 20px;
+}
+
 
 .menu-toggle {
   display: none;
