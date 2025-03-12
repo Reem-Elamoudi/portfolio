@@ -1,210 +1,185 @@
-
-<!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/85915fb54c.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="/main.css">
-	<title>reem's cv</title>
-</head>
-
-<body>
-	<!-- top gradient -->
-	<div class="sectionBc"></div>
-	<!-- to dark mode -->
-	<div class="toDark"></div>
-
-	<!-- header -->
-	<header>
-		<div class="continer">
-			<!-- user photo and name -->
-			<div class="user">
-<img src="/img/letter-r.png" class="logo" alt="Reem's Logo">
-				<h2><a href="#landing">REEM ELAMOUDI</a></h2>
-			</div>
-			<!--line -->
-			<div class="line" id="colorWhite"></div>
-			<!-- list part -->
-			<div class="list">
-				<div class="listBackground"></div>
-				<!-- ul part -->
-				<div class="ul">
-					<ul>
-						<li><a href="#whatIdo">What I do</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#about2">About</a></li>
-						<li><a href="#process">Process</a></li>
-					</ul>
-					<button class="bt btHead"><span>Let’s chat</span> <span class="background"></span></button>
-					<div class="media">
-						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M20.7477 7.45029C20.7611 7.64423 20.7611 7.83818 20.7611 8.03391C20.7611 13.998 16.2208 20.8764 7.91863 20.8764V20.8728C5.46614 20.8764 3.06459 20.1739 1 18.8494C1.35661 18.8923 1.71501 18.9137 2.0743 18.9146C4.10672 18.9164 6.08105 18.2344 7.67999 16.9787C5.74857 16.9421 4.05489 15.6827 3.46321 13.8443C4.13979 13.9748 4.83693 13.9479 5.501 13.7665C3.39529 13.3411 1.88036 11.491 1.88036 9.34238C1.88036 9.32272 1.88036 9.30395 1.88036 9.28518C2.50778 9.63464 3.21028 9.82859 3.92886 9.85004C1.9456 8.52459 1.33427 5.8862 2.53191 3.82339C4.82352 6.64322 8.20463 8.35746 11.8342 8.53889C11.4704 6.97123 11.9674 5.32849 13.14 4.22648C14.9579 2.5176 17.8171 2.60519 19.5259 4.42221C20.5368 4.2229 21.5056 3.85199 22.3922 3.32646C22.0553 4.37127 21.3501 5.25878 20.4081 5.82274C21.3027 5.71728 22.1768 5.47775 23 5.1122C22.394 6.02026 21.6308 6.81124 20.7477 7.45029Z" fill="CurrentColor"></path>
-							</svg>
-						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M19.0406 19.0408H16.0775V14.3988C16.0775 13.292 16.0575 11.8668 14.536 11.8668C12.9927 11.8668 12.7563 13.0726 12.7563 14.3175V19.0404H9.79314V9.49713H12.6378V10.8015H12.6762C12.9609 10.3147 13.3723 9.91427 13.8666 9.64282C14.361 9.37138 14.9197 9.23909 15.4832 9.26004C18.4867 9.26004 19.0406 11.2358 19.0406 13.8057V19.0408ZM6.44939 8.19239C6.10922 8.19246 5.77667 8.09166 5.4938 7.90273C5.21092 7.7138 4.99043 7.44522 4.8602 7.13097C4.72997 6.81672 4.69586 6.47091 4.76217 6.13727C4.82849 5.80363 4.99226 5.49715 5.23276 5.25659C5.47327 5.01603 5.77972 4.85219 6.11334 4.7858C6.44697 4.71941 6.79279 4.75344 7.10707 4.8836C7.42135 5.01376 7.68997 5.23419 7.87897 5.51703C8.06796 5.79986 8.16884 6.13239 8.16884 6.47256C8.16884 6.92862 7.98769 7.36601 7.66525 7.68853C7.3428 8.01105 6.90545 8.19229 6.44939 8.19239ZM7.93098 19.0404H4.96472V9.49713H7.93137L7.93098 19.0404ZM20.5165 2.0013H3.47546C3.28376 1.99897 3.09348 2.03447 2.91552 2.10578C2.73755 2.17709 2.57541 2.2828 2.43835 2.41686C2.3013 2.55092 2.19204 2.71069 2.11682 2.88703C2.0416 3.06338 2.0019 3.25283 2 3.44453V20.5546C2.00455 20.9416 2.16255 21.311 2.43927 21.5816C2.71599 21.8522 3.08882 22.0019 3.47584 21.9978H20.5165C20.9045 22.0031 21.2788 21.854 21.5569 21.5833C21.835 21.3127 21.9943 20.9427 21.9996 20.5546V3.44146C21.9941 3.05366 21.8347 2.68395 21.5565 2.41365C21.2784 2.14336 20.9043 1.99462 20.5165 2.00015" fill="CurrentColor"></path>
-							</svg>
-					</div>
-				</div>
-				<!-- icon part -->
-				<div class="menu" id="colorWhite">
-					<span>Menu</span>
-					<div class="icon">
-						<div class="line one"></div>
-						<div class="line two"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-
-	<!-- landing page -->
-	<section class="landing opacity" id="landing">
-		<div class="continer">
-			<div class="title">
-				<h1>Hi, I’m Reem,</h1>
-				<h1>I learn web development, create art, and love design. Hard work drives me</h1>
-			</div>
-
-			<p>I am <span>passionate about learning,</span> and love exploring new experiences that expand my knowledge
-				and let your business thrive.</p>
-			<div class="landingBt">
-				<button class="bt" style="background-color: var(--header-color); color: var(--ff);"><span>Let’s chat</span> <span class="background"></span></button>
-				<a href="#whatIdo">
-					<span>or find out more</span>
-					<span class="arrow">
-						<span>
-							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
-									fill="#6a6861"></path>
-							</svg>
-						</span>
-						<span>
-							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
-									fill="#6a6861"></path>
-							</svg>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- contact with me -->
-	<section class="contact">
-		<div class="continer">
-			<div class="colOne">
-				<i class="fa-solid fa-x"></i>
-				<h2>Let's work together</h2>
-				<p>For new project inquiries, please fill out this form.</p>
-				
-			</div>
-			<div class="colTwo">
-				<form action="">
-					<div class="row">
-						<input type="text" placeholder="First Name*" name="firstName" required>
-						<input type="text" placeholder="Last Name*" name="LastName" required>
-					</div>
-					<div class="row">
-						<input type="email" placeholder="Email*" name="email" required>
-						<input type="text" placeholder="Phone">
-					</div>
-					<textarea name="description" id="description" cols="30" rows="8" required
-						placeholder="Describe your Product and the project*"></textarea>
-					<input type="submit" value="Send message">
-					
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
-
-	<!-- go to top -->
-	<a href="#landing" id="toTop">
-		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path fill-rule="evenodd" clip-rule="evenodd"
-				d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
-				fill="#fff"></path>
-		</svg>
-	</a>
-
-
-	<!-- whatIdo section -->
-	<section id="whatIdo">
-		<div class="continer">
-			<div class="contTitle padding-left">
-				<h2>I help startups</h2>
-				<div class="title">
-					<div class="cont">
-						<h2>learn and improve daily</h2>  
-<h2>turn ideas into code</h2>  
-<h2>build small web projects</h2>  
-<h2>write clean &amp; simple code</h2>  
-<h2>practice problem-solving</h2>  
-<h2>explore new technologies</h2>  
-<h2>grow into a pro developer</h2>  
-<h2>learn and improve daily</h2>  
-
-					</div>
-				</div>
-			</div>
-			<p class="padding-left">If you're a startup in need of a web developer with a diverse skill set ranging from coding and design to prototyping and problem-solving, feel free to reach out!</p>
-			<span class="padding-left">MY SKILLS</span>
-			<div class="cards">
-				<div class="card">
-					<i class="fa-solid fa-chevron-down"></i>
-					<div class="title">CSS</div>
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div class="card">
-					<i class="fa-solid fa-chevron-down"></i>
-					<div class="title">js, react</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div class="card">
-					<i class="fa-solid fa-chevron-down"></i>
-					<div class="title">git, github</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	
-
-
-
-
-
-<script src="/main.js"></script>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Resume
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div class="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8">
+   <div class="flex flex-col md:flex-row">
+    <div class="md:w-1/2 p-4">
+     <h1 class="text-3xl font-bold text-gray-800">
+      LAURA
+      <span class="text-yellow-500">
+       PARKER
+      </span>
+     </h1>
+     <p class="text-gray-600">
+      UI &amp; UX DESIGNER
+     </p>
+     <div class="mt-4">
+      <p class="flex items-center text-gray-600">
+       <i class="fas fa-phone mr-2">
+       </i>
+       +000 111 222 3334
+      </p>
+      <p class="flex items-center text-gray-600">
+       <i class="fas fa-envelope mr-2">
+       </i>
+       uname@gmail.com
+      </p>
+      <p class="flex items-center text-gray-600">
+       <i class="fas fa-map-marker-alt mr-2">
+       </i>
+       Address here, Zip-0123
+      </p>
+     </div>
+     <div class="mt-8">
+      <h2 class="text-xl font-bold text-yellow-500">
+       PROFILE
+      </h2>
+      <p class="text-gray-600 mt-2">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+      </p>
+     </div>
+     <div class="mt-8">
+      <h2 class="text-xl font-bold text-yellow-500">
+       EXPERIENCE
+      </h2>
+      <div class="mt-4">
+       <h3 class="font-bold text-gray-800">
+        Senior UX Designer - Present
+       </h3>
+       <p class="text-gray-600">
+        Company Name / Location
+       </p>
+       <p class="text-gray-600 mt-2">
+        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+       </p>
+      </div>
+      <div class="mt-4">
+       <h3 class="font-bold text-gray-800">
+        Creative User Interface Designer - 2016
+       </h3>
+       <p class="text-gray-600">
+        Company Name / Location
+       </p>
+       <p class="text-gray-600 mt-2">
+        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+       </p>
+      </div>
+     </div>
+     <div class="mt-8">
+      <h2 class="text-xl font-bold text-yellow-500">
+       REFERENCE
+      </h2>
+      <div class="mt-4">
+       <p class="text-gray-600">
+        <span class="font-bold">
+         Senior Designer
+        </span>
+        Jhon Smith
+       </p>
+       <p class="text-gray-600">
+        Company name here
+       </p>
+      </div>
+      <div class="mt-4">
+       <p class="text-gray-600">
+        <span class="font-bold">
+         Senior UX Designer
+        </span>
+        Jhon Ander Smith
+       </p>
+       <p class="text-gray-600">
+        Company name here
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="md:w-1/2 p-4">
+     <div class="flex justify-center md:justify-end">
+      <div class="relative">
+       <img alt="Profile picture of Laura Parker" class="rounded-full w-24 h-24" height="100" src="https://storage.googleapis.com/a1aa/image/nlZdAW37Nl4gjczegAAX8uBV-rfNYa_9Eyx6kQ0Zj5Y.jpg" width="100"/>
+       <div class="absolute top-0 right-0 w-8 h-8 bg-yellow-500 rounded-full">
+       </div>
+      </div>
+     </div>
+     <div class="mt-8">
+      <h2 class="text-xl font-bold text-yellow-500">
+       EDUCATION
+      </h2>
+      <div class="mt-4">
+       <p class="font-bold text-gray-800">
+        2014 - 2016
+       </p>
+       <p class="text-gray-600">
+        Degree / Major Name
+       </p>
+       <p class="text-gray-600">
+        University name here
+       </p>
+      </div>
+      <div class="mt-4">
+       <p class="font-bold text-gray-800">
+        2010 - 2014
+       </p>
+       <p class="text-gray-600">
+        Degree / Major Name
+       </p>
+       <p class="text-gray-600">
+        University name here
+       </p>
+      </div>
+     </div>
+     <div class="mt-8">
+      <h2 class="text-xl font-bold text-yellow-500">
+       LANGUAGE
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mt-2">
+       <li>
+        English
+       </li>
+       <li>
+        French
+       </li>
+       <li>
+        Spanish
+       </li>
+      </ul>
+     </div>
+     <div class="mt-8">
+      <h2 class="text-xl font-bold text-yellow-500">
+       SKILLS
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mt-2">
+       <li>
+        Photoshop
+       </li>
+       <li>
+        Illustrator
+       </li>
+       <li>
+        InDesign
+       </li>
+       <li>
+        After Effects
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
